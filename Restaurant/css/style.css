@@ -1,0 +1,655 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald/Oswald-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Medium.ttf");
+}
+
+.title-color {
+  color: #760622;
+}
+
+nav {
+  background-color: #000;
+  opacity: 0.7;
+}
+
+nav-title {
+  font-size: 30px;
+  font-family: Ubuntu;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav .collapse a:hover {
+  color: #760622 !important;
+}
+
+.carousel-subtitle {
+  font-size: 50px;
+  font-family: Ubuntu;
+}
+
+.carousel-indicators .active {
+  background-color: orangered !important;
+}
+.carousel-indicators li {
+  width: 90px !important;
+}
+
+/* css redes sociales */
+.social-bar {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100;
+}
+
+.icon {
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem;
+  display: flex;
+  transition: all 0.5s;
+}
+
+.icon-facebook {
+  background: #2e406e;
+}
+
+.icon-twitter {
+  background: #339dc5;
+}
+
+.icon-youtube {
+  background: #e83028;
+}
+
+.icon:first-child {
+  border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+  border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+  padding-right: 3rem;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42);
+}
+
+/* fin */
+
+.proposal {
+  background-image: url("../assets/foto2@2x.webp");
+  background-size: cover;
+  background-position: bottom;
+  height: 700px;
+  padding-top: 100px;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+.proposal .title {
+  font-size: 60px;
+  font-family: Oswald;
+}
+.proposal .text {
+  font-family: Roboto;
+  line-height: 2;
+}
+
+.chef {
+  font-family: Oswald;
+}
+.menu {
+  width: 250px;
+  height: 200px;
+}
+
+.chef-btn {
+  background-color: #760622;
+  color: white;
+}
+
+.event {
+  background-image: url("../assets/foto3@2x.png");
+  background-size: cover;
+  height: 700px;
+  padding-top: 100px;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.event h1,
+h3 {
+  color: #ffff;
+  font-family: Oswald;
+  text-align: center;
+}
+
+.event h1 {
+  font-size: 60px;
+}
+
+.event p {
+  text-align: justify;
+  color: #ffff;
+}
+
+.event .imgs {
+  display: block;
+  margin: auto;
+  width: 150px;
+  height: 100px;
+}
+
+.event .fas {
+  color: #fff;
+  text-align: center;
+}
+
+.comentarios .img {
+  position: absolute;
+  top: 10px;
+  left: 750px;
+}
+
+.comentarios .icons {
+  width: 20px;
+  height: 20px;
+}
+.pie {
+  background-color: #760622;
+}
+
+.pie .title1-index {
+  position: absolute;
+  top: 3250px;
+  left: 700px;
+  color: white;
+  font-family: Oswald;
+}
+
+.pie .title2-index {
+  position: absolute;
+  top: 3250px;
+  left: 850px;
+  color: white;
+  font-family: Oswald;
+}
+
+.pie .title3-index {
+  position: absolute;
+  top: 3250px;
+  left: 1000px;
+  color: white;
+  font-family: Oswald;
+}
+
+.pie .info1-index {
+  position: absolute;
+  top: 3300px;
+  left: 700px;
+  color: white;
+}
+
+.pie .info2-index {
+  position: absolute;
+  top: 3360px;
+  left: 700px;
+  color: white;
+}
+
+.pie .map {
+  position: absolute;
+  top: 1620px;
+  left: 550px;
+}
+
+.pie .imgs {
+  padding: 4em;
+}
+
+/* css de Nosotros */
+
+.history .img {
+  position: relative;
+  top: 100px; /* ajustar los valores para mover la imagen */
+
+  width: 100px;
+  height: 500px;
+  /* border-radius: 50%; Para volverlo redondo*/
+}
+
+.history .text-h4 {
+  position: absolute;
+  top: 180px;
+  left: 1100px;
+  color: #d0721f;
+  font-size: x-large;
+}
+.history .text-h1 {
+  position: absolute;
+  top: 200px;
+  left: 1000px;
+  color: #760622;
+  font-size: 200px;
+  font-family: Oswald;
+}
+.history .text {
+  position: absolute;
+  top: 300px;
+  left: 1000px;
+  color: #760622;
+  font-family: Roboto;
+}
+
+.history p {
+  text-align: left;
+}
+
+.personal {
+  background-color: #a38c8c;
+}
+
+.personal h4,
+.text {
+  text-align: center;
+  color: #7c3535;
+  font-family: Oswald;
+}
+
+.personal .separador {
+  width: 300px;
+  height: 40px;
+}
+
+.pie .title1-us {
+  position: absolute;
+  top: 2110px;
+  left: 700px;
+  color: white;
+  font-family: Oswald;
+}
+
+.pie .title2-us {
+  position: absolute;
+  top: 2110px;
+  left: 850px;
+  color: white;
+  font-family: Oswald;
+}
+
+.pie .title3-us {
+  position: absolute;
+  top: 2110px;
+  left: 1000px;
+  color: white;
+  font-family: Oswald;
+}
+
+.pie .info1-us {
+  position: absolute;
+  top: 2160px;
+  left: 700px;
+  color: white;
+}
+
+.pie .info2-us {
+  position: absolute;
+  top: 2230px;
+  left: 700px;
+  color: white;
+}
+
+.pie .map-us {
+  position: absolute;
+  top: 480px;
+  left: 550px;
+}
+
+/* Css de servicios */
+
+.servicios .title-services {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  color: #760622;
+  font-size: 100px;
+  font-family: Oswald;
+}
+
+.servicios .info1-services {
+  font-size: 10px;
+  color: #760622;
+}
+.servicios .info2-services {
+  font-size: 10px;
+  color: #760622;
+}
+
+.servicios .info3-services {
+  font-size: 10px;
+  color: #760622;
+}
+
+.servicios .info4-services {
+  font-size: 10px;
+  color: #760622;
+}
+
+.servicio-contact .title-service {
+  font-family: Oswald;
+  color: #760622;
+}
+
+.servicio-contact .text-service {
+  color: #760622;
+}
+
+.servicio-contact .contact-btn {
+  background-color: #ff4d00;
+  color: white;
+}
+
+.servicio-card {
+  background-color: #e5e1e2;
+}
+
+.pie .title1-service {
+  position: absolute;
+  top: 1700px;
+  left: 700px;
+  color: white;
+  font-family: Oswald;
+}
+
+.pie .title2-service {
+  position: absolute;
+  top: 2110px;
+  left: 850px;
+  color: white;
+  font-family: Oswald;
+}
+
+.pie .title3-service {
+  position: absolute;
+  top: 2110px;
+  left: 1000px;
+  color: white;
+  font-family: Oswald;
+}
+
+.pie .info1-service {
+  position: absolute;
+  top: 2160px;
+  left: 700px;
+  color: white;
+}
+
+.pie .info2-service {
+  position: absolute;
+  top: 2230px;
+  left: 700px;
+  color: white;
+}
+
+.pie .map-service {
+  position: absolute;
+  top: 480px;
+  left: 550px;
+}
+
+/* Css de Menú*/
+.mg-title {
+  margin-top: 7rem;
+}
+
+.menu-title {
+  color: #760622;
+  font-size: 80px !important;
+  font-family: Oswald;
+}
+
+.menu-title-div {
+  flex-grow: 1;
+}
+
+.btn-menu {
+  background-color: rgb(255 58 3);
+  color: #fff;
+}
+
+.btn-menu:hover {
+  color: #fff;
+}
+
+.card-n {
+  background-color: rgb(255 58 3);
+}
+
+.card-v {
+  background-color: #760622;
+}
+
+@media (max-width: 600px) {
+  .menu-row-title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card-v {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-n {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.img-card {
+  height: 226px;
+  width: 23rem;
+}
+
+.menu-modal {
+  max-width: 600px !important;
+}
+.modal-title {
+  color: #760622;
+}
+
+.btn-modal-pedido {
+  background-color: #760622;
+  color: #fff;
+}
+
+.btn-modal {
+  background-color: rgb(255 58 3);
+  color: #fff;
+}
+
+/* Css de Mapa*/
+.map a:hover {
+  text-decoration: none;
+}
+
+.map-title {
+  color: #760622;
+  font-family: Oswald;
+  font-size: 96px;
+}
+
+.map-subtitle {
+  color: #760622;
+  font-family: Oswald;
+}
+
+@media only screen and (min-width: 1250px) {
+  .map-subtitle {
+    height: 300px;
+  }
+}
+
+.map-subtitle a {
+  color: #760622;
+}
+
+/* Css de Contacto*/
+.my-7 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.px-7 {
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+.title {
+  color: #760622;
+  font-family: Oswald;
+  font-size: 6rem;
+}
+
+@media only screen and (max-width: 490px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+
+.text {
+  text-align: left;
+  font-family: Roboto;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  color: #91908b;
+  background-color: #dfded9;
+}
+
+.btn-orange {
+  color: #fff;
+  background-color: #ff3c04;
+  border-color: #ff3c04;
+}
+.btn-orange:hover {
+  color: #fff;
+  background-color: #801e03;
+  border-color: #400f01;
+}
+
+.bg-red {
+  background-color: #760622;
+}
+
+.text-1 {
+  font-size: 1rem;
+}
+
+a.text-1 {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .w-links {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 1235px) {
+  .logo-footer {
+    max-width: 264.75px;
+  }
+}
+
+/* Css de footer*/
+
+.pien {
+  background-color: #760622;
+  color: #fff;
+}
+
+@media only screen and (min-width: 1250px) {
+  .pie-image {
+    max-width: 270px;
+  }
+}
+.pie-a {
+  text-decoration: none;
+  font-size: 16px;
+}
+.pie-a:hover {
+  text-decoration: none;
+}
+
+/*Css de Pedido*/
+
+.pedido-title {
+  color: #760622;
+  font-size: 80px !important;
+  font-family: Oswald;
+}
+
+.pedido-plate {
+  color: #760622;
+  font-family: Oswald;
+}
+
+.pedido-plate,
+.value {
+  color: #760622;
+  font-family: Oswald;
+}
+
+.w-33 {
+  width: 33% !important;
+}
+
+.btn-cal {
+  font-size: 20px;
+}
+
+.pedido-input {
+  width: 38px;
+}
+
+.pedido-btn-add {
+  background-color: rgb(255 58 3);
+  color: #fff;
+  height: 40px;
+}
+
+.pedido-btn-add i {
+  line-height: inherit;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#lblCartCount {
+  font-size: 12px;
+  background: #760622;
+  color: #fff;
+  padding: 0 5px;
+  vertical-align: top;
+  margin-left: -10px;
+}
