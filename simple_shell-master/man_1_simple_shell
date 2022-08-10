@@ -1,0 +1,43 @@
+.TH man 1 "08 August 2020" "" "1.0 simple_shell man page"
+.SH NAME
+.B simple_shell
+- for Holberton School
+
+.SH SYNOPSIS
+.B ./hsh
+
+.SH DESCRIPTION
+.B The simple_shell is an end of trimester project for students at Holberton School, is a command interpreter that provides a command line user interface that executes commands in intecractive end non-ineractive mode. 
+
+.PP
+.B Overview
+.PP
+The simple shell is a simplified iteration of a command line interpreter, similar to 
+.B bash.
+
+.SH SYNTAX
+.B $ [command | options] <argument> <argument>
+
+.PP
+.SH SHELL BUILT-IN COMMANDS
+
+$./hsh
+
+.SS $/bin/ls or $ls
+    Print allows us to list the contents of a directory.
+
+.SS $/bin/pwd or $pwd
+    print the route you are on:
+    /home/vagrant/simple_shell
+
+.SS env
+    Print the environment variables to STDOUT
+.SS exit
+    Exit the shell.
+
+.SH AUTHORS
+.NM
+Andres Cortes <1805@holbertonschool.com>.
+.PP
+Jhonnyer Otalvaro <1818@holbertonschool.com>.
+.PP
