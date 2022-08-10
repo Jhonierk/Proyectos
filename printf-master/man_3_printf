@@ -1,0 +1,77 @@
+.TH _PRINTF 3 "21 July 2020" "Holberton School Cohort 12" "_printf man page"
+.SH NAME
+.B _printf
+- print data formatted.
+.SH SYNOPSIS
+#include "holberton.h"
+
+int printf(const char *format, ...);
+.SH DESCRIPTION
+Function that produces results according to a format. The function _printf write output to stdout, the standard output stream.
+
+All these functions write the output under the control of a format string that specifies how subsequent arguments (or arguments accessed via the variable-length argument facilities of stdarg(3)) are converted for output.
+
+.B Format of the format string
+
+The format string is a character string, beginning and ending in its initial shift state, if any. The format string is composed of zero or more directives: ordinary characters (not %), which are copied unchanged to the output stream; and conversion specifications, each of which results in fetching zero or more subsequent arguments. Each conversion specification is introduced by the character %, and ends with a conversion specifier.
+
+The arguments must correspond properly (after type promotion) with the conversion specifier. Each conversion specifier asks for the next argument (and it is an error if insufficiently many arguments are given).
+
+.SH CONVERSION SPECIFIER
+A character that specifies the type of conversion to be applied. The conversion specifiers and their meanings are:
+.IP d,i
+Decimal signed integer. The int argument is converted to signed decimal notation.
+
+.IP c
+Character. The int argument is converted to an unsigned char, and the resulting character is written.
+
+.IP s
+The const char * argument is expected to be a pointer to an array of character type (pointer to a string). Characters from the array are written up to (but not including) a terminating null byte ('\0').
+
+.IP %
+A '%' is written. No argument is converted. The complete conversion specification is '%%'.
+
+.SH RETURN VALUE
+Upon successful return, these functions return the number of characters printed (excluding the null byte used to end output to strings).
+
+If an error occurs, return a negative value (-1).
+
+.SH CONFORMING TO
+The _printf function conform to C89 and C99.
+
+.SH BUGS
+No known bugs.
+
+.SH EXAMPLE
+To print a string:
+.PP
+.RS +4
+#include "holberton.h"
+
+.RE
+.RS +4
+/**
+ * main - function to use printf
+ * @void: void parameter
+ *
+ * Return: Length of the string
+ */
+
+int main(void)
+.RE
+.RS +4
+{
+.RE
+.RS +4
+	char *str = "Holberton School";
+.RE
+.RS +4
+	return (_printf("I am at student from: %s, I love that", str));
+.RE
+.RS +4
+}
+.DE
+.SH SEE ALSO
+.I printf(3)
+.SH AUTHOR
+Jhonnyer Otalvaro Sierra & Vanessa Sotomayor Ampudia
