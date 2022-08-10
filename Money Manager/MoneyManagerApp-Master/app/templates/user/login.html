@@ -1,0 +1,76 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Login Panel </title>
+
+    <link rel="shortcut icon" href="{% static 'assets/images/fav.jpg' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawsom-all.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/login.css' %}"/>
+    <link rel="icon" type="image/x-icon" href="{% static 'img/cerdo.png' %}">
+</head>
+
+<body>
+<div class="container-fluid ">
+
+    <div class=" no-pdding login-box">
+        <div class="row no-margin w-100 bklmj">
+            <div class="col-lg-6 col-md-6 log-det">
+                <h2>Login</h2>
+
+                <form method="post">
+                    {%csrf_token%}
+                    <div class="row no-margin past">
+                        <p>Dont Have an Account? <span>Create your Account</span></p>
+                    </div>
+
+
+                    <div class="text-box-cont">
+                        <div class="input-group mb-3">
+
+                            {{form.username}}
+                        </div>
+                        <div class="input-group mb-3">
+
+                            {{form.password}}
+                        </div>
+                        <div class="row no-margin">
+                            <p class="forget-p">Forgot Password ?</p>
+                        </div>
+                        <div class="right-bkij mb-3">
+                            <button type="submit" class="btn btn-success btn-round" href="">sign In</button>
+                        </div>
+                        <br>
+                        <div class="row linkoi">
+                            <div class="col-sm-5">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6 col-md-6 box-de">
+                <div class="ditk-inf">
+                    <h2 class="w-100">Welcome to community </h2>
+                    <p>Simply Create your account by <br> clicking the Signup Button</p>
+                    <a type="button" class="btn btn-outline-light" href="{% url 'signup' %}">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script src="{% static 'assets/js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'assets/js/popper.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/js/script.js' %}"></script>
+
+
+</html>
