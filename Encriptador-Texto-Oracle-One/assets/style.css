@@ -1,0 +1,310 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-image: url("../assets/img/code.jpg");
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;  
+    margin: 50px;
+    padding: 0 150px;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.877);
+    margin: 30px;
+    border-radius: 2%;
+    
+}
+
+.main{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 600px;
+    
+}
+
+h1, h2{
+    font-family: sans-serif;
+    color: #2ac2dd;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.logo{
+    width: 20%;
+    text-align: right;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.Contenedor_encriptador{
+    width: 50%;
+    margin-top: 1%;
+    margin-left: 30%;
+    
+}
+
+.text-input{
+    border-radius: 20px;
+    border: 2px solid #2ac2dd;
+    resize: none;
+    background: none;
+    outline: 0;
+    width: 80%;
+    height: 35vh;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #45d3d8;
+    font-size: 15px;
+   
+}
+
+.text-input::placeholder{
+    font-weight: 400;
+    color: #45d3d865;
+    font-size: 25px;
+}
+
+#btn-encriptar{
+    margin: 3%;
+    width: 50%;
+    height: 62px;
+    border-radius: 24px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    background-color: #2ac2dd;
+    cursor: pointer;
+    transition: .3s;
+    border: none;
+    margin-left: 50px;
+}
+
+#btn-encriptar:hover{
+    transform: translateY(-5px);
+    background-color: #2298ad;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+}
+
+#btn-desencriptar{
+    margin: 3%;
+    width: 50%;
+    height: 62px;
+    border-radius: 24px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    background-color: #2ac2dd;
+    cursor: pointer;
+    transition: .3s;
+    border: none;
+    margin-left: 50px;
+}
+
+#btn-desencriptar:hover{
+    transform: translateY(-5px);
+    background-color: #2298ad;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+}
+
+.msg-box{
+    width: 35%;
+    display: flex;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+.box-encriptor{
+    width: 50vh;
+    height: 60vh;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.842);
+    box-shadow: 0 24px 32px rgba(0, 0, 0, .08);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+   
+}
+
+.box-encriptor h2{
+    margin: 3rem 0;
+}
+
+.parrafo{
+    font-size: 1.5rem;
+}
+
+#msg{
+    border-radius: 10px;
+    border: 2px solid #2ac2dd;
+    width: 100%;
+    height: 80%;
+    font-family: sans-serif;
+    color: #45d3d8;
+    font-size: 20px;  
+}
+
+#btn-copy{
+    margin: 3%;
+    width: 50%;
+    height: 62px;
+    margin-left: 60px;
+    border-radius: 24px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    background-color: #2ac2dd;
+    cursor: pointer;
+    transition: .3s;
+    border: none;
+}
+
+@media screen and (max-width: 1750px) {
+    .box-encriptor{
+        width: 40vh;
+        height: 55vh;
+    }
+}
+
+@media screen and (max-width: 1520px){
+
+    .logo{
+        width: 25%;
+        margin-top: 10px;
+        margin-right: 55px;
+    }
+    
+    .main{       
+        width: 850px;
+        height: 600px;      
+    }
+
+    .container{
+        padding: 10px; 
+    }
+
+    .Contenedor_encriptador{
+        width: 80%;
+        margin-top: 1%;
+        margin-left: 15%;
+        
+    }
+
+    h1{
+        margin-right: 70px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 1390px){
+    .main{       
+        width: 750px;
+        height: 600px;      
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .main{       
+        width: 650px;
+        height: 600px;      
+    }
+}
+
+@media screen and (max-width: 1230px){
+
+   body{ 
+    padding: 0;
+   }
+   
+    .main{       
+        width: 900px;
+        height: 600px;      
+    }
+
+    .container{
+        margin: 0; 
+    }
+
+    .Contenedor_encriptador{
+        width: 80%;
+        
+    }
+
+    h1{
+        margin-right: 80px;
+
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .main{       
+        width: 700px;
+        height: 600px;      
+    }
+
+}
+
+@media screen and (max-width: 950px){
+    .main{       
+        position: relative;
+        height: 1050px;    
+        right: 20px;
+    }
+
+    .logo{
+        width: 35%;
+    }
+
+    h1{
+        margin-right: 220px;
+    }
+
+    .container{
+        margin-left:15%;
+        width: 500px;
+    }
+
+    .text-input{
+        width: 60%;
+    }
+
+    .box-encriptor{
+        margin-top: 700px;
+        margin-left: 300px;
+    }
+
+    .box-hidde{
+        background-color: black;
+    }
+
+    #btn-encriptar{
+        width: 40%;
+    }
+
+    #btn-desencriptar{
+        width: 40%;
+    }
+    
+    .msg-box{
+        padding:0;  
+        position: absolute;
+    }
+
+    #msg{   
+        width: 250px;
+        height: 90%;
+        font-family: sans-serif;
+        font-size: 20px;       
+    }
+}

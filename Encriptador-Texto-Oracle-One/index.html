@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.ico">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <div class="fondo">
+        <div class="container">
+            <div class="logo"><img src="assets/img/mensaje.png" alt="logo" class="logo"></div>
+            <main class="main">
+
+
+
+                <section class="Contenedor_encriptador">
+                    <h1 class="titulo">Encriptador de texto</h1>
+                    <form>
+                        <input class="text-input" type="text" name="input-texto" id="input-texto"
+                            placeholder="Ingrese el texto aqui" required>
+                        <input class="btn" type="button" value="encriptar!" id="btn-encriptar">
+                        <button class="btn" type="button" id="btn-desencriptar">desencriptar!</button>
+                    </form>
+                </section>
+
+                <section class="msg-box">
+                    <div class="box-encriptor">
+                        
+                        <img src="assets/img/detective.png" alt="detective" class="img-detective">
+                        <h2 class="mensaje">Ningún mensaje fue encontrado</h2>
+                        <p class="parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                        <!--
+                        <input class="text-input-salida" type="text" id="msg">
+                        <input onclick="copiarTexto();" class="btn" type="button" value="copiar" id="btn-copy">
+                        -->
+                    </div>
+                </section>
+            </main>
+
+            <script src="js/encript.js"></script>
+            <script>
+                function copiarTexto() {
+                    let texto = document.getElementById('msg');
+                    texto.select();
+                    texto.setSelectionRange(0, 99999);
+                    document.execCommand('copy')
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'Perfecto, has copiado tu texto encriptado',
+                        showConfirmButton: false,
+                        timer: 2500
+                    })
+                }
+            </script>
+            <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        </div>
+    </div>
+</body>
+
+</html>
